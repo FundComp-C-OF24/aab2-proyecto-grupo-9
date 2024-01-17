@@ -1,0 +1,10 @@
+Algoritmo GestionCartelera
+	Definir horario, sala como Cadena
+	Definir precio Como Real
+	Definir MAX_PELICULAS como Entero
+    MAX_PELICULAS <- 10  
+    Dimension  peliculas[MAX_PELICULAS], horarios[MAX_PELICULAS], salas[MAX_PELICULAS] 
+	Definir cantidadPeliculas como Entero
+    cantidadPeliculas <- 0
+FinAlgoritmo
+Funcion agregarPelicula(nombre, horario, sala)
