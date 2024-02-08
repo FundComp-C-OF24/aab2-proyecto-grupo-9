@@ -1,0 +1,70 @@
+PRUEBA DE ESCRITORIO
+
+CARTELERA DE PELICULAS
+--------------------------------------------------------------------------------
+Còdigo | Pelicula | Hora | Sala | Dias de Funcion
+Beekeeper | 18:00 - 19:00 | Sala A, Sala B | Lunes, Miercoles
+Intersteral | 13:00 - 20:00 | Sala A, Sala B | Martes, Sabado
+Punto de quiebre  | 15:00 - 18:00 | Sala A, Sala B | Viernes, Jueves
+Club de la pelea  | 14:00 - 19:00 | Sala A, Sala B | Sabado, Miercoles
+Wonka | 19:00 - 21:00 | Sala A, Sala B | Lunes, Viernes
+Sociedad de las nieves  | 17:00 - 19:00 | Sala A, Sala B | Jueves, Sabado
+Titanic  | 14:00 - 22:00 | Sala A, Sala B | Sabado, Lunes
+Contratiempo  | 17:00 - 19:00 | Sala A, Sala B | Miercoles, Sabado
+Jack in the box  | 17:00 - 19:00 | Sala A, Sala B | Viernes, Lunes 
+Boyka  | 17:00 - 19:00 | Sala A, Sala B | Martes, Viernes
+--------------------------------------------------------------------------------
+Por favor, elige una película:Punto de quiebre
+Días de función para Punto de quiebre: [Viernes, Jueves]
+Elige un día de función: Jueves
+Elige un horario: 15:00
+Elige una sala (A o B): B
+Elige el número de boletos: 2
+
+¿Desea adquirir Snacks? (Si/No): Si
+ --------------------------------------------------------------------------------------------------------
+             "|                           Menú de Snacks                                 |"
+             "|--------------------------------------------------------------------------|"
+             "| 1  | Palomitas                                                 | $  3.00 |"
+             "|----|-----------------------------------------------------------|---------|"
+             "| 2  | Jugo Helado                                               | $  2.00 |"
+             "|----|-----------------------------------------------------------|---------|"
+             "| 3  | Papas Fritas                                              | $  4.00 |"
+             "|----|-----------------------------------------------------------|---------|"
+             "| 4  | Hot Dog                                                   | $  2.00 |"
+             "|----|-----------------------------------------------------------|---------|"
+             "| 5  | Combo1: canguilMediano,gaseosaMediana,dulcePrimerNivel    | $  6.00 |"
+             "|----|-----------------------------------------------------------|---------|"
+             "| 6  | Combo2: nachos,gaseosaMediana,dulcePrimerNivel            | $  6.50 |
+             "|----|-----------------------------------------------------------|---------|"
+             "| 7  | Combo3: hotDog,gaseosaMediana,dulcePrimerNivel            | $  6.50 |"
+             "|----|-----------------------------------------------------------|---------|"
+             "| 8  | Combo4: 2hotDog,2gaseosaMediana,canguilMediano            | $ 11.50 |"
+             "|----|-----------------------------------------------------------|---------|"
+             "| 9  | Combo5: 2nachos,2gaseosaMediana,canguilMediano            | $ 12.00 |"
+             "|----|-----------------------------------------------------------|---------|"
+             "| 10 | Combo6: 2granizados,2nachos,quesoExtra,gomitas            | $ 14.00 |"
+             "|----|-----------------------------------------------------------|---------|"
+             "| 11 | Combo7: 3canguil,3gaseosaGrandes,2nachos,2hotDog          | $ 21.00 |"
+             "----------------------------------------------------------------------------"
+Elige un número de snack: 4
+¿Desea escoger otro snack? (Si/No): No
+
+Resumen de Opciones:
+Película: Punto de quiebre
+Día de Función: Jueves
+Horario: 15:00
+Sala: B
+Número de Boletos: 2
+Precio de Boletos: 7,00
+
+Snacks Elegidos:
+- Hotdog
+
+Precio Total (Boletos + Snacks): 10,00
+Por favor ingrese sus datos para generar la factura
+Por favor, ingrese su nombre: Ana
+Por favor, ingrese su CI o RUC : 1115645615
+Por favor, ingrese su dirección : Pitas
+Por favor, ingrese su telefono : 0952662453
+Por favor, ingrese su correo : ana@gmail.com

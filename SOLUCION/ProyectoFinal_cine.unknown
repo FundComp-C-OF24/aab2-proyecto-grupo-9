@@ -1,0 +1,242 @@
+Inicio
+
+        carteleraPeliculas();
+        solicitarOpciones();
+        String[][]cartelera = [10][4];
+        cartelera[0][0]= "Beekeeper";
+        cartelera[0][1]= "18:00 - 19:00";
+        cartelera[0][2]= "Sala A, Sala B";
+        cartelera[0][3]= "Lunes, Miercoles";
+        cartelera[1][0]= "Intersteral";
+        cartelera[1][1]= "13:00 - 20:00";
+        cartelera[1][2]= "Sala A, Sala B";
+        cartelera[1][3]= "Martes, Sabado";
+        cartelera[2][0]= "Punto de quiebre ";
+        cartelera[2][1]= "15:00 - 18:00";
+        cartelera[2][2]= "Sala A, Sala B";
+        cartelera[2][3]= "Viernes, Jueves";
+        cartelera[3][0] = "Club de la pelea ";
+        cartelera[3][1] = "14:00 - 19:00";
+        cartelera[3][2] = "Sala A, Sala B";
+        cartelera[3][3]= "Sabado, Miercoles";
+        cartelera[4][0] = "Wonka";
+        cartelera[4][1] = "19:00 - 21:00";
+        cartelera[4][2] = "Sala A, Sala B";
+        cartelera[4][3]= "Lunes, Viernes";
+        cartelera[5][0] = "Sociedad de las nieves ";
+        cartelera[5][1] = "17:00 - 19:00";
+        cartelera[5][2] = "Sala A, Sala B";
+        cartelera[5][3]= "Jueves, Sabado";
+        cartelera[6][0] = "Titanic ";
+        cartelera[6][1] = "14:00 - 22:00";
+        cartelera[6][2] = "Sala A, Sala B";
+        cartelera[6][3]= "Sabado, Lunes";
+        cartelera[7][0] = "Contratiempo ";
+        cartelera[7][1] = "17:00 - 19:00";
+        cartelera[7][2] = "Sala A, Sala B";
+        cartelera[7][3] = "Miercoles, Sabado";
+        cartelera[8][0] = "Jack in the box ";
+        cartelera[8][1] = "17:00 - 19:00";
+        cartelera[8][2] = "Sala A, Sala B";
+        cartelera[8][3] = "Viernes, Lunes ";
+        cartelera[9][0] = "Boyka ";
+        cartelera[9][1] = "17:00 - 19:00";
+        cartelera[9][2] = "Sala A, Sala B";
+        cartelera[9][3] = "Martes, Viernes";
+        
+        Escribir "CARTELERA DE PELICULAS"
+        Escribir "Còdigo | Pelicula | Hora | Sala | Dias de Funcion"
+        
+Fin    
+
+Procedimiento solicitarOpciones();
+    peliculaElegida, x[A-Z][a-z];
+
+    horarioElegido, i[1-n];
+
+    salaElegida, x[A-B];
+
+    numBoletos, i[1-n];
+
+    precioBoletos, d[0-n];
+
+    respuestaSnacks, x[A-Z][a-z];
+
+    opcionSnack, i[1-5];
+
+    precioSnacksTotal, d[0-n];
+    precioSnacksTotal = 0;
+    
+    snacksElegidos, x[A-Z][a-z];
+    snacksElegidos = null;
+
+    otroSnack, x[A-Z][a-z];
+
+    precioTotal, d[0-n];
+
+    diaFuncion, x[A-Z][a-z];
+    diaFuncion = null;
+
+    Escrbia "Por favor, elige una película: "
+    Leer peliculaElegida;
+
+    Escriba "Elige el dia de la funcion: "
+    Leer diaFuncion;
+
+    Escriba "Elige un horario: "
+    Leer horarioElegido;
+
+    Escribir "Elige una sala (A o B): "
+    Leer salaElegida;
+
+    Escribir "Elige el número de boletos: "
+    Leer numBoletos;
+
+    precioBoletos = calcularPrecio(salaElegida, numBoletos);
+
+    Escriba "¿Desea adquirir Snacks? (Si/No): ";
+    Leer respuestaSnacks;
+
+    Si (respuestaSnacks == "Si")         
+
+        
+        Hacer
+            // Menú de snacks
+
+            Escribir "----------------------------------------------------------------------------"
+            Escribir "|                           Menú de Snacks                                 |"
+            Escribir "|--------------------------------------------------------------------------|"
+            Escribir "| 1  | Palomitas                                                 | $  3.00 |"
+            Escribir "|----|-----------------------------------------------------------|---------|"
+            Escribir "| 2  | Jugo Helado                                               | $  2.00 |"
+            Escribir "|----|-----------------------------------------------------------|---------|"
+            Escribir "| 3  | Papas Fritas                                              | $  4.00 |"
+            Escribir "|----|-----------------------------------------------------------|---------|"
+            Escribir "| 4  | Hot Dog                                                   | $  2.00 |"
+            Escribir "|----|-----------------------------------------------------------|---------|"
+            Escribir "| 5  | Combo1: canguilMediano,gaseosaMediana,dulcePrimerNivel    | $  6.00 |"
+            Escribir "|----|-----------------------------------------------------------|---------|"
+            Escribir "| 6  | Combo2: nachos,gaseosaMediana,dulcePrimerNivel            | $  6.50 |
+            Escribir "|----|-----------------------------------------------------------|---------|"
+            Escribir "| 7  | Combo3: hotDog,gaseosaMediana,dulcePrimerNivel            | $  6.50 |"
+            Escribir "|----|-----------------------------------------------------------|---------|"
+            Escribir "| 8  | Combo4: 2hotDog,2gaseosaMediana,canguilMediano            | $ 11.50 |"
+            Escribir "|----|-----------------------------------------------------------|---------|"
+            Escribir "| 9  | Combo5: 2nachos,2gaseosaMediana,canguilMediano            | $ 12.00 |"
+            Escribir "|----|-----------------------------------------------------------|---------|"
+            Escribir "| 10 | Combo6: 2granizados,2nachos,quesoExtra,gomitas            | $ 14.00 |"
+            Escribir "|----|-----------------------------------------------------------|---------|"
+            Escribir "| 11 | Combo7: 3canguil,3gaseosaGrandes,2nachos,2hotDog          | $ 21.00 |"
+            Escribir "----------------------------------------------------------------------------"
+                
+            Escribir "Elige un número de snack: "
+            Leer opcionSnack;
+
+            Hacer
+
+                Si (opcionSnack > 4 || opcionSnack < 1) entonces
+                    Escriba "Opción no válida. Por favor, elige un número válido: "
+                    Leer opcionSnack;
+
+                Dependiendo de (opcionSnack) {
+                    Opcion 1:
+                        snacksElegidos = "Palomitas";
+                        precioSnacksTotal += 3.0;
+                    break;
+
+                    Opcion 2:
+                        snacksElegidos = "Jugo Helado";
+                        precioSnacksTotal += 2.0;
+                    break;
+
+                    Opcion 3:
+                        snacksElegidos = "Papas Fritas";
+                        precioSnacksTotal += 4.0;
+                    break;
+
+                    Opcion 4:
+                        snacksElegidos = "Hot Dog";
+                        precioSnacksTotal += 2.0;
+                    break;
+                    
+                    Opcion 5:
+                        snacksElegidos = "Combo1: canguilMediano,gaseosaMediana,dulcePrimerNivel";
+                        precioSnacksTotal += 6.0;
+                    break;
+
+                    Opcion 6:
+                        snacksElegidos = "Combo2: nachos,gaseosaMediana,dulcePrimerNivel";
+                        precioSnacksTotal += 6.50;
+                    break;
+
+                    Opcion 7:
+                        snacksElegidos = "Combo3: hotDog,gaseosaMediana,dulcePrimerNivel";
+                        precioSnacksTotal += 6.50;
+                    break;
+
+                    Opcion 8:
+                        snacksElegidos = "Combo4: 2hotDog,2gaseosaMediana,canguilMediano";
+                        precioSnacksTotal +=11.0;
+                    break;
+
+                    Opcion 9:
+                        snacksElegidos = "Combo5: 2nachos,2gaseosaMediana,canguilMediano";
+                        precioSnacksTotal += 12.0;
+                    break;
+
+                    Opcion 10:
+                        snacksElegidos = "Combo6: 2granizados,2nachos,quesoExtra,gomitas";
+                        precioSnacksTotal += 14.0;
+                    break;
+
+                    Opcion 11:
+                        snacksElegidos = "Combo7: 3canguil,3gaseosaGrandes,2nachos,2hotDog";
+                        precioSnacksTotal += 21.0;
+                    break;
+
+            Hasta (opcionSnack > 11 || opcionSnack < 1)
+
+            Escribir "¿Desea escoger otro snack? (Si/No): "
+            Leer otroSnack;
+            i++;
+        Hasta (otroSnack == "Si")
+
+            precioTotal = precioBoletos + precioSnacksTotal;
+
+            Escribir "Resumen de Opciones: ";
+            Escribir "Película: "+peliculaElegida+" \nHorario:"+horarioElegido+"\nSala: "+salaElegida+"\nNúmero de Boletos: "+numBoletos+"\nPrecio de Boletos: "+precioBoletos
+
+            Escribir "\nSnacks Elegidos:"
+            Escribir sin saltar "Los snaks que eligio son: "
+            Para (i=0;i<numeroSnaks;i++)
+                Escribir sin saltar snacksElegidos+", "
+            Fin para
+
+            Escribir "\nPrecio Total (Boletos + Snacks): "+precioTotal);
+    Si no
+
+            Escriba "\nResumen de Opciones: "
+            Escruba "Película: "+peliculaElegida+"\nHorario: "+horarioElegido+"\nSala: "+salaElegida+"\nNúmero de Boletos: "+numBoletos+"\nPrecio de Boletos: "+precioBoletos        
+    Fin si
+
+        Escribir "\nPor favor, ingresa tu nombre: ";
+        Lea nombreUsuario;
+
+        Escribir "\nGracias por tu compra, %s. ¡Disfruta de la película!\n", nombreUsuario;
+
+Funcion calcularPrecio(sala, x[A-B]; numBoletos, i[1-n]) 
+        precioBase, d[0-n];
+        precioBase = 0;
+
+        Si (sala == "A") entonces
+            precioBase = 5.0;
+        Sino
+            precioBase = 7.0;
+        Fin si
+
+        Si (diaFuncion == "Martes" || diaFuncion == "Jueves")
+            numBoletos /= 2;
+        Fin si
+
+        return (precioBase*numBoletos);
+Fin funcion
